@@ -6,13 +6,14 @@
 </head>
 <body>
 <script>
-    let num1= +prompt("nhap so: ");
+    let num1= 0;
     let total=0;
-    while (num1 != -1){
-        num1= +prompt("nhap so: ");
-        alert(num1);
+
+
+    do {
         total = total + num1;
-    }
+        num1= +prompt("nhap: ");
+    }while (num1!=-1)
     alert(total);
 </script>
 </body>
